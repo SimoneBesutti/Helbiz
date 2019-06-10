@@ -1,0 +1,115 @@
+/*regole generiche*/
+body{
+  font-size:17px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+/*contenitore per centrare sezioni*/
+.centrone {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*contenitore di colonne in float*/
+.row::after {
+  display: table;
+  content: "";
+  clear: both;
+
+}
+
+
+/*header*/
+header {
+  height: 150px;
+  background: yellow;
+}
+
+.contenitorelogo{
+  display: inline-block;
+  padding: 20px 0px 0px 20px;
+}
+
+#barranavigazione{
+  display: inline-block;
+  padding-left: 100px;
+
+}
+
+#barranavigazione ul{
+  list-style: none;
+}
+
+#barranavigazione li{
+  display: inline-block;
+  padding-left: 30px;
+}
+
+#barralingue{
+  float: right;
+}
+/*main*/
+
+section {
+  background: gray;
+  border: solid 1px #000;
+}
+
+.col {
+  height: 100px;
+  border: solid 1px #000;
+/*  background: green;*/
+  float: left;
+  width: 45%;
+}
+.monopattinocol{
+  float: right;
+  width: 30%;
+  padding:200px 0;
+  color:white;
+  text-align: center;
+  padding-right: 10%;
+}
+.monopattinocol a{
+  display: inline-block;
+  color:white;
+  font-size: 21px;
+  margin-top: 10px;
+}
+
+
+.monopattinocol h2{
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+
+.row .col:first-child {
+  margin-right: 10%;
+}
+.monopattino{
+/*  height:400px;*/
+  background-image:url("monopattino.png");
+  background-size:cover;
+}
+
+
+
+/*footer*/
+footer {
+  height: 150px;
+  background: #000;
+}
